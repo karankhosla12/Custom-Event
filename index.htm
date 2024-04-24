@@ -9,13 +9,14 @@
 
     <script>
 
-        function refreshPage() {
+  function refreshPage() {
+    window.lintrk('track', { conversion_url: "https://karankhosla12.github.io/kkcustomeevent" });
 
-window.lintrk('track', { conversion_url: "https://karankhosla12.github.io/kkcustomeevent" });
+    setTimeout(function() {
+        location.reload();
+    }, 5000);
+}
 
-
-            location.reload();
-        }
     </script>
 <script type="text/javascript">
 _linkedin_partner_id = "3722732";
