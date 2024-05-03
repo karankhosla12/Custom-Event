@@ -20,11 +20,17 @@
 }
 
     </script>
- <script type="text/javascript">
- window.addEventListener('CookiebotOnAccept', function (e) {
-   if (!Cookiebot.consent.marketing) return;
-   // Execute code that set a cookie
-<script type="text/javascript">
+
+    <script type="text/javascript">
+     function CookiebotCallback_OnAccept() {
+           if (Cookiebot.consent.marketing)            
+{      
+enableStatisticsCookies();              
+}
+}
+function enableStatisticsCookies() {  
+          //Execute code that sets marketing cookies
+    <script type="text/javascript">
 _linkedin_partner_id = "3722732";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);
@@ -42,8 +48,11 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3722732&fmt=gif" />
 </noscript>
 
- }, false);
+        }  
 </script>
+
+
+
 
 </body>
 </html>
